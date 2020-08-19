@@ -273,6 +273,13 @@ bool CStreaming::HasSpecialCharLoaded(int slot) {
     return plugin::CallAndReturnDynGlobal<bool, int>(gaddrof(CStreaming::HasSpecialCharLoaded), slot);
 }
 
+int addrof(CStreaming::HasModelLoaded) = ADDRESS_BY_VERSION(0x4087E0, 0, 0, 0, 0, 0);
+int gaddrof(CStreaming::HasModelLoaded) = GLOBAL_ADDRESS_BY_VERSION(0x4087E0, 0, 0, 0, 0, 0);
+
+bool CStreaming::HasModelLoaded(int ModelIndex) {
+    return plugin::CallAndReturnDynGlobal<bool, int>(gaddrof(CStreaming::HasModelLoaded), ModelIndex);
+}
+
 int addrof(CStreaming::HasVehicleUpgradeLoaded) = ADDRESS_BY_VERSION(0x407820, 0, 0, 0, 0, 0);
 int gaddrof(CStreaming::HasVehicleUpgradeLoaded) = GLOBAL_ADDRESS_BY_VERSION(0x407820, 0, 0, 0, 0, 0);
 

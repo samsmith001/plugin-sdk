@@ -426,6 +426,22 @@ META_BEGIN(CStreaming::HasSpecialCharLoaded)
     using args_t = ArgPick<ArgTypes<int>, 0>;
 META_END
 
+META_BEGIN(CStreaming::HasModelLoaded)
+    static int address;
+    static int global_address;
+    static const int id = 0x4087E0;
+    static const bool is_virtual = false;
+    static const int vtable_index = -1;
+    using mv_addresses_t = MvAddresses<0x4087E0, 0, 0, 0, 0, 0>;
+    // total references count: 10us (1), 10ushl (0), 10eu (0), 11us (0), 11eu (0), sr2 (0), sr2lv (0)
+    using refs_t = RefList<
+        0x47EE4A, GAME_10US_COMPACT, H_CALL, 0x47E090, 1>;
+    using def_t = bool(int);
+    static const int cb_priority = PRIORITY_BEFORE; 
+    using calling_convention_t = CallingConventions::Cdecl;
+    using args_t = ArgPick<ArgTypes<int>, 0>;
+META_END
+
 META_BEGIN(CStreaming::LoadInitialVehicles)
     static int address;
     static int global_address;
