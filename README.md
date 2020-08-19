@@ -1,7 +1,7 @@
 <p align="center"><img src="http://i.imgur.com/xFXWiU9.png"></p>
 
 ## English
-Plugin-SDK is a some kind of "dev-kit" for creating plugins for GTA San Andreas, GTA Vice City and GTA 3.
+Plugin-SDK is a some kind of "dev-kit" for creating plugins for GTA San Andreas, GTA Vice City and GTA 3. This is a fork with unofficial updates made for my own use.
 
 ### How to use plugin-sdk?
 1. Install development environment (IDE) (Detailed: [**Installing development environment (IDE)**](https://github.com/DK22Pac/plugin-sdk/wiki/Installing-development-environment-(IDE)))
